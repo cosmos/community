@@ -1,0 +1,24 @@
+title: "<title>"
+labels: [Product Feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ This category is solely for product feedback. ⚠️
+  - type: dropdown
+    attributes:
+      label: Select Topic Area
+      description: What would you like to discuss?
+      options:
+        - "Cosmos SDK"
+        - "IBC Go"
+        - "CosmJS / Telescope"
+        - "Others"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Body
+      description: Start your discussion!
+    validations:
+      required: true
